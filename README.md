@@ -1,5 +1,19 @@
 # AVX / AVX2 Intrinsics Example Code
 
+<!-- TOC -->
+
+- [AVX / AVX2 Intrinsics Example Code](#avx--avx2-intrinsics-example-code)
+    - [Quick Start](#quick-start)
+        - [Compile](#compile)
+        - [Run](#run)
+        - [Clean](#clean)
+    - [Initialization Intrinsics](#initialization-intrinsics)
+        - [Initialization with Scalar Values](#initialization-with-scalar-values)
+        - [Loading Data to Memory](#loading-data-to-memory)
+    - [Copyright](#copyright)
+
+<!-- /TOC -->
+
 ## Quick Start
 
 ### Compile
