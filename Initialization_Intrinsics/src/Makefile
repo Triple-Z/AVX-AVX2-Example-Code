@@ -1,6 +1,7 @@
 CC = gcc
-CFLAGS = -mavx -mavx2 -mfma -msse -msse2 -msse3
+CFLAGS = -mavx -mavx2 -mfma -msse -msse2 -msse3 -I$(INCDIR)
 
+INCDIR = ../include
 BINDIR = ../bin
 OBJDIR = ../obj
 

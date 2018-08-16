@@ -10,3 +10,4 @@
 - [setzero](Initialization_Intrinsics/src/setzero.c)
 - [set1](Initialization_Intrinsics/src/set1.c)
 - [set](Initialization_Intrinsics/src/set.c)
+- [setr](Initialization_Intrinsics/src/setr.c)

@@ -8,6 +8,9 @@
 #include <emmintrin.h>  // SSE2
 #include <stdio.h>
 
+#include "gcc_support.h"
+
+
 int main(int argc, char const *argv[]) {
 
     // Single-precision    
