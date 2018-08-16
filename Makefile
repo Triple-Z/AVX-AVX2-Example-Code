@@ -1,5 +1,5 @@
-# Author:	TripleZ<me@triplez.cn>
-# Date:		2018-08-17 <-- This is my 21th birthday :tada:
+# Author:  TripleZ<me@triplez.cn>
+# Date:    2018-08-17 <-- This is my 21th birthday :tada:
 
 CC = gcc
 CFLAGS = -I$(INCDIR) -mavx -mavx2 -mfma -msse -msse2 -msse3
