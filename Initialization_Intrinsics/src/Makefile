@@ -1,15 +1,20 @@
+# Author:	TripleZ<me@triplez.cn>
+# Date:		2018-08-16
+
 CC = gcc
-CFLAGS = -mavx -mavx2 -mfma -msse -msse2 -msse3 -I$(INCDIR)
+CFLAGS = -I$(INCDIR) -mavx -mavx2 -mfma -msse -msse2 -msse3
 
 INCDIR = ../include
 BINDIR = ../bin
 OBJDIR = ../obj
 
+ALL = setzero set1 set setr
+
 $(OBJDIR)/%.o: %.c
 	@[ -d $(OBJDIR) ] || mkdir $(OBJDIR)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-all: setzero
+all: $(ALL)
 
 setzero: $(patsubst %, $(OBJDIR)/%, setzero.o)
 	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
@@ -27,8 +32,21 @@ setr: $(patsubst %, $(OBJDIR)/%, setr.o)
 	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
 	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
 
+run-%: $(BINDIR)/%
+	$^
+
+runall: all
+	@echo -e
+	@for exe in $(ALL); do \
+		echo "$(BINDIR)/$$exe"; \
+		$(BINDIR)/$$exe; \
+		echo -e; \
+	done
+
+
 .PHONY: clean
 clean:
-	@rm -rf $(BINDIR) $(OBJDIR)
+	-@rm -rf $(BINDIR) $(OBJDIR)
+	@echo "- Cleaned Directory 'Initialization_Intrinsics/'"
 
 

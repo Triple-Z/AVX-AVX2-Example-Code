@@ -1,6 +1,6 @@
 /**
- * Author: TripleZ<me@triplez.cn>
- * Date: 2018-08-16
+ * Author:  TripleZ<me@triplez.cn>
+ * Date:    2018-08-16
  */
 
 #include <immintrin.h>  // AVX/AVX2
