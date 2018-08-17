@@ -8,11 +8,14 @@ export CC
 export CFLAGS
 
 all:
-	$(MAKE) -C Initialization_Intrinsics/src
+	@$(MAKE) -C Initialization_Intrinsics/src
+	@$(MAKE) -C Arithmetic_Intrinsics/src
 
 .PHONY: clean
 clean:
 	@$(MAKE) -C Initialization_Intrinsics/src clean
+	@$(MAKE) -C Arithmetic_Intrinsics/src clean
 
 run:
-	$(MAKE) -C Initialization_Intrinsics/src runall
+	@$(MAKE) -C Initialization_Intrinsics/src runall
+	@$(MAKE) -C Arithmetic_Intrinsics/src runall
