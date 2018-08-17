@@ -141,7 +141,27 @@ Then you would find out all the output files are gone away!
     > - [_mm256_subs_epu8](Arithmetic_Intrinsics/src/subs.c#L33)    `AVX2`
     > - [_mm256_subs_epu16](Arithmetic_Intrinsics/src/subs.c#L42)   `AVX2`
 
+- [hadd](Arithmetic_Intrinsics/src/hadd.c)
+    > - [_mm256_hadd_ps](Arithmetic_Intrinsics/src/hadd.c#L15)
+    > - [_mm256_hadd_pd](Arithmetic_Intrinsics/src/hadd.c#L24)
+    > - [_mm256_hadd_epi16](Arithmetic_Intrinsics/src/hadd.c#L33)   `AVX2`
+    > - [_mm256_hadd_epi32](Arithmetic_Intrinsics/src/hadd.c#L42)   `AVX2`
 
+- [hsub](Arithmetic_Intrinsics/src/hsub.c)
+    > - [_mm256_hadd_ps](Arithmetic_Intrinsics/src/hsub.c#L15)
+    > - [_mm256_hadd_pd](Arithmetic_Intrinsics/src/hsub.c#L24)
+    > - [_mm256_hadd_epi16](Arithmetic_Intrinsics/src/hsub.c#L33)   `AVX2`
+    > - [_mm256_hadd_epi32](Arithmetic_Intrinsics/src/hsub.c#L42)   `AVX2`
+
+- [hadds](Arithmetic_Intrinsics/src/hadds.c)
+    > - [_mm256_hadds_epi16](Arithmetic_Intrinsics/src/hadds.c#L15) `AVX2`
+
+- [hsubs](Arithmetic_Intrinsics/src/hsubs.c)
+    > - [_mm256_hsubs_epi16](Arithmetic_Intrinsics/src/hsubs.c#L15) `AVX2`
+    
+- [addsub](Arithmetic_Intrinsics/src/addsub.c)
+    > - [_mm256_addsub_ps](Arithmetic_Intrinsics/src/addsub.c#L15)
+    > - [_mm256_addsub_pd](Arithmetic_Intrinsics/src/addsub.c#L24)
 
 ## Copyright
 
