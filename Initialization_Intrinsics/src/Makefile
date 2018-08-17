@@ -8,7 +8,7 @@ INCDIR = ../include
 BINDIR = ../bin
 OBJDIR = ../obj
 
-ALL = setzero set1 set setr
+ALL = setzero set1 set setr load loadu maskload
 
 $(OBJDIR)/%.o: %.c
 	@[ -d $(OBJDIR) ] || mkdir $(OBJDIR)
@@ -32,6 +32,18 @@ setr: $(patsubst %, $(OBJDIR)/%, setr.o)
 	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
 	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
 
+load: $(patsubst %, $(OBJDIR)/%, load.o)
+	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
+	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
+
+loadu: $(patsubst %, $(OBJDIR)/%, loadu.o)
+	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
+	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
+
+maskload: $(patsubst %, $(OBJDIR)/%, maskload.o)
+	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
+	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
+
 run-%: $(BINDIR)/%
 	$^
 
@@ -48,5 +60,3 @@ runall: all
 clean:
 	-@rm -rf $(BINDIR) $(OBJDIR)
 	@echo "- Cleaned Directory 'Initialization_Intrinsics/'"
-
-
