@@ -12,6 +12,7 @@
         - [Loading Data to Memory](#loading-data-to-memory)
     - [Arithmetic Intrinsics](#arithmetic-intrinsics)
         - [Addition and Subtraction](#addition-and-subtraction)
+        - [Multiplication and Division](#multiplication-and-division)
     - [Copyright](#copyright)
 
 <!-- /TOC -->
@@ -162,6 +163,18 @@ Then you would find out all the output files are gone away!
 - [addsub](Arithmetic_Intrinsics/src/addsub.c)
     > - [_mm256_addsub_ps](Arithmetic_Intrinsics/src/addsub.c#L15)
     > - [_mm256_addsub_pd](Arithmetic_Intrinsics/src/addsub.c#L24)
+
+### Multiplication and Division
+
+- [mul](Arithmetic_Intrinsics/src/mul.c)
+    > - [_mm256_mul_ps](Arithmetic_Intrinsics/src/mul.c#L15)
+    > - [_mm256_mul_pd](Arithmetic_Intrinsics/src/mul.c#L24)
+    > - [_mm256_mul_epi32](Arithmetic_Intrinsics/src/mul.c#L33) `AVX2`
+    > - [_mm256_mul_epu32](Arithmetic_Intrinsics/src/mul.c#L42) `AVX2`
+
+- [mullo](Arithmetic_Intrinsics/src/mul.c)
+    > - [_mm256_mullo_epi16](Arithmetic_Intrinsics/src/mul.c#L15)   `AVX2`
+    > - [_mm256_mullo_epi32](Arithmetic_Intrinsics/src/mul.c#L24)   `AVX2`
 
 ## Copyright
 
