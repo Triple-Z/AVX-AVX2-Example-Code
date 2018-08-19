@@ -176,6 +176,10 @@ Then you would find out all the output files are gone away!
     > - [_mm256_mullo_epi16](Arithmetic_Intrinsics/src/mul.c#L15)   `AVX2`
     > - [_mm256_mullo_epi32](Arithmetic_Intrinsics/src/mul.c#L24)   `AVX2`
 
+- [mulhi](Arithmetic_Intrinsics/src/mulhi.c)
+    > - [_mm256_mulhi_epi16](Arithmetic_Intrinsics/src/mulhi.c#L15)   `AVX2`
+    > - [_mm256_mulhi_epu16](Arithmetic_Intrinsics/src/mulhi.c#L24)   `AVX2`
+
 ## Copyright
 
 This project is licensed under the [BSD 3-Clause](LICENSE) license.

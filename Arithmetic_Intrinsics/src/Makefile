@@ -8,7 +8,7 @@ INCDIR = ../include
 BINDIR = ../bin
 OBJDIR = ../obj
 
-ALL = add sub adds subs hadd hsub hadds hsubs addsub mul mullo
+ALL = add sub adds subs hadd hsub hadds hsubs addsub mul mullo mulhi
 
 $(OBJDIR)/%.o: %.c
 	@[ -d $(OBJDIR) ] || mkdir $(OBJDIR)
@@ -57,6 +57,10 @@ mul: $(patsubst %, $(OBJDIR)/%, mul.o)
 	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
 
 mullo: $(patsubst %, $(OBJDIR)/%, mullo.o)
+	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
+	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
+
+mulhi: $(patsubst %, $(OBJDIR)/%, mulhi.o)
 	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
 	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
 
