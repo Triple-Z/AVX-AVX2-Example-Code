@@ -180,6 +180,13 @@ Then you would find out all the output files are gone away!
     > - [_mm256_mulhi_epi16](Arithmetic_Intrinsics/src/mulhi.c#L15)   `AVX2`
     > - [_mm256_mulhi_epu16](Arithmetic_Intrinsics/src/mulhi.c#L24)   `AVX2`
 
+- [mulhrs](Arithmetic_Intrinsics/src/mulhrs.c)
+    > - [_mm256_mulhrs_epi16](Arithmetic_Intrinsics/src/mulhrs.c#L15)   `AVX2`
+
+- [div](Arithmetic_Intrinsics/src/div.c)
+    > - [_mm256_div_ps](Arithmetic_Intrinsics/src/div.c#L15)
+    > - [_mm256_div_pd](Arithmetic_Intrinsics/src/div.c#L24)
+
 ## Copyright
 
 This project is licensed under the [BSD 3-Clause](LICENSE) license.
