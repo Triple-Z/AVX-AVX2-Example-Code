@@ -206,7 +206,21 @@ Then you would find out all the output files are gone away!
     > - [_mm_fmsub_ss](Arithmetic_Intrinsics/src/fmsub.c#L52)       `FMA`
     > - [_mm_fmsub_sd](Arithmetic_Intrinsics/src/fmsub.c#L58)       `FMA`
 
+- [fnmadd](Arithmetic_Intrinsics/src/fnmadd.c)
+    > - [_mm_fnmadd_ps](Arithmetic_Intrinsics/src/fnmadd.c#L16)       `FMA`
+    > - [_mm_fnmadd_pd](Arithmetic_Intrinsics/src/fnmadd.c#L26)       `FMA`
+    > - [_mm256_fnmadd_ps](Arithmetic_Intrinsics/src/fnmadd.c#L36)    `FMA`
+    > - [_mm256_fnmadd_ps](Arithmetic_Intrinsics/src/fnmadd.c#L46)    `FMA`
+    > - [_mm_fnmadd_ss](Arithmetic_Intrinsics/src/fnmadd.c#L52)       `FMA`
+    > - [_mm_fnmadd_sd](Arithmetic_Intrinsics/src/fnmadd.c#L58)       `FMA`
 
+- [fnmsub](Arithmetic_Intrinsics/src/fnmsub.c)
+    > - [_mm_fnmsub_ps](Arithmetic_Intrinsics/src/fnmsub.c#L16)       `FMA`
+    > - [_mm_fnmsub_pd](Arithmetic_Intrinsics/src/fnmsub.c#L26)       `FMA`
+    > - [_mm256_fnmsub_ps](Arithmetic_Intrinsics/src/fnmsub.c#L36)    `FMA`
+    > - [_mm256_fnmsub_ps](Arithmetic_Intrinsics/src/fnmsub.c#L46)    `FMA`
+    > - [_mm_fnmsub_ss](Arithmetic_Intrinsics/src/fnmsub.c#L52)       `FMA`
+    > - [_mm_fnmsub_sd](Arithmetic_Intrinsics/src/fnmsub.c#L58)       `FMA`
 
 ## Copyright
 
