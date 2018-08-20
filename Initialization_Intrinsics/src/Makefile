@@ -8,7 +8,8 @@ INCDIR = ../include
 BINDIR = ../bin
 OBJDIR = ../obj
 
-ALL = setzero set1 set setr load loadu maskload
+ALL = setzero set1 set setr \
+		load loadu maskload
 
 $(OBJDIR)/%.o: %.c
 	@[ -d $(OBJDIR) ] || mkdir $(OBJDIR)

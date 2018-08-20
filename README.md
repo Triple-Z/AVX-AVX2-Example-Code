@@ -13,6 +13,7 @@
     - [Arithmetic Intrinsics](#arithmetic-intrinsics)
         - [Addition and Subtraction](#addition-and-subtraction)
         - [Multiplication and Division](#multiplication-and-division)
+        - [Fused Multiply and Add (FMA)](#fused-multiply-and-add-fma)
     - [Copyright](#copyright)
 
 <!-- /TOC -->
@@ -186,6 +187,26 @@ Then you would find out all the output files are gone away!
 - [div](Arithmetic_Intrinsics/src/div.c)
     > - [_mm256_div_ps](Arithmetic_Intrinsics/src/div.c#L15)
     > - [_mm256_div_pd](Arithmetic_Intrinsics/src/div.c#L24)
+
+### Fused Multiply and Add (FMA)
+
+- [fmadd](Arithmetic_Intrinsics/src/fmadd.c)
+    > - [_mm_fmadd_ps](Arithmetic_Intrinsics/src/fmadd.c#L16)       `FMA`
+    > - [_mm_fmadd_pd](Arithmetic_Intrinsics/src/fmadd.c#L26)       `FMA`
+    > - [_mm256_fmadd_ps](Arithmetic_Intrinsics/src/fmadd.c#L36)    `FMA`
+    > - [_mm256_fmadd_ps](Arithmetic_Intrinsics/src/fmadd.c#L46)    `FMA`
+    > - [_mm_fmadd_ss](Arithmetic_Intrinsics/src/fmadd.c#L52)       `FMA`
+    > - [_mm_fmadd_sd](Arithmetic_Intrinsics/src/fmadd.c#L58)       `FMA`
+
+- [fmsub](Arithmetic_Intrinsics/src/fmsub.c)
+    > - [_mm_fmsub_ps](Arithmetic_Intrinsics/src/fmsub.c#L16)       `FMA`
+    > - [_mm_fmsub_pd](Arithmetic_Intrinsics/src/fmsub.c#L26)       `FMA`
+    > - [_mm256_fmsub_ps](Arithmetic_Intrinsics/src/fmsub.c#L36)    `FMA`
+    > - [_mm256_fmsub_ps](Arithmetic_Intrinsics/src/fmsub.c#L46)    `FMA`
+    > - [_mm_fmsub_ss](Arithmetic_Intrinsics/src/fmsub.c#L52)       `FMA`
+    > - [_mm_fmsub_sd](Arithmetic_Intrinsics/src/fmsub.c#L58)       `FMA`
+
+
 
 ## Copyright
 
