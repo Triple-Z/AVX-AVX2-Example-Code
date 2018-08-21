@@ -246,6 +246,15 @@ Then you would find out all the output files are gone away!
     > - [_mm256_permute_ps](Permuting_and_Shuffling/src/permute.c#L30)
     > - [_mm256_permute_pd](Permuting_and_Shuffling/src/permute.c#L38)
 
+- [permute4x64](Permuting_and_Shuffling/src/permute4x64.c)
+    > - [_mm256_permute4x64_pd](Permuting_and_Shuffling/src/permute4x64.c#L14)      `AVX2`
+    > - [_mm256_permute4x64_epi64](Permuting_and_Shuffling/src/permute4x64.c#L22)   `AVX2`
+
+- [permute2f128](Permuting_and_Shuffling/src/permute2f128.c)
+    > - [_mm256_permute2f128_ps](Permuting_and_Shuffling/src/permute2f128.c#L22)
+    > - [_mm256_permute2f128_pd](Permuting_and_Shuffling/src/permute2f128.c#L36)
+    > - [_mm256_permute2f128_si256](Permuting_and_Shuffling/src/permute2f128.c#L50)
+
 ## Copyright
 
 This project is licensed under the [BSD 3-Clause](LICENSE) license.
