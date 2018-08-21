@@ -14,6 +14,8 @@
         - [Addition and Subtraction](#addition-and-subtraction)
         - [Multiplication and Division](#multiplication-and-division)
         - [Fused Multiply and Add (FMA)](#fused-multiply-and-add-fma)
+    - [Permuting and Shuffling](#permuting-and-shuffling)
+        - [Permuting](#permuting)
     - [Copyright](#copyright)
 
 <!-- /TOC -->
@@ -233,6 +235,16 @@ Then you would find out all the output files are gone away!
     > - [_mm_fmsubadd_pd](Arithmetic_Intrinsics/src/fmsubadd.c#L26)       `FMA`
     > - [_mm256_fmsubadd_ps](Arithmetic_Intrinsics/src/fmsubadd.c#L36)    `FMA`
     > - [_mm256_fmsubadd_pd](Arithmetic_Intrinsics/src/fmsubadd.c#L46)    `FMA`
+
+## Permuting and Shuffling
+
+### Permuting
+
+- [permute](Permuting_and_Shuffling/src/permute.c)
+    > - [_mm_permute_ps](Permuting_and_Shuffling/src/permute.c#L14)
+    > - [_mm_permute_pd](Permuting_and_Shuffling/src/permute.c#L22)
+    > - [_mm256_permute_ps](Permuting_and_Shuffling/src/permute.c#L30)
+    > - [_mm256_permute_pd](Permuting_and_Shuffling/src/permute.c#L38)
 
 ## Copyright
 

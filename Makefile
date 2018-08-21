@@ -10,12 +10,15 @@ export CFLAGS
 all:
 	@$(MAKE) -C Initialization_Intrinsics/src all
 	@$(MAKE) -C Arithmetic_Intrinsics/src all
+	@$(MAKE) -C Permuting_and_Shuffling/src all
 
-.PHONY: clean
+.PHONY: clean run
 clean:
 	@$(MAKE) -C Initialization_Intrinsics/src clean
 	@$(MAKE) -C Arithmetic_Intrinsics/src clean
+	@$(MAKE) -C Permuting_and_Shuffling/src clean
 
 run:
 	@$(MAKE) -C Initialization_Intrinsics/src runall
 	@$(MAKE) -C Arithmetic_Intrinsics/src runall
+	@$(MAKE) -C Permuting_and_Shuffling/src runall
