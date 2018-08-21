@@ -8,13 +8,21 @@ INCDIR = ../include
 BINDIR = ../bin
 OBJDIR = ../obj
 
-ALL = permute permute4x64 permute2f128
+ALL = permute permute4x64 permute2f128 permutevar permutevar8x32
 
 $(OBJDIR)/%.o: %.c
 	@[ -d $(OBJDIR) ] || mkdir $(OBJDIR)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 all: $(ALL)
+
+permutevar8x32: $(patsubst %, $(OBJDIR)/%, permutevar8x32.o)
+	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
+	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
+
+permutevar: $(patsubst %, $(OBJDIR)/%, permutevar.o)
+	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
+	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
 
 permute2f128: $(patsubst %, $(OBJDIR)/%, permute2f128.o)
 	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
