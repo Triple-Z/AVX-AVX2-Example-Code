@@ -10,7 +10,7 @@ OBJDIR = ../obj
 
 ALL = add sub adds subs hadd hsub hadds hsubs addsub \
 		mul mullo mulhi mulhrs div \
-		fmadd fmsub fnadd fnsub
+		fmadd fmsub fnmadd fnmsub fmaddsub fmsubadd
 
 $(OBJDIR)/%.o: %.c
 	@[ -d $(OBJDIR) ] || mkdir $(OBJDIR)
@@ -82,11 +82,19 @@ fmsub: $(patsubst %, $(OBJDIR)/%, fmsub.o)
 	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
 	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
 
-fnadd: $(patsubst %, $(OBJDIR)/%, fnadd.o)
+fnmadd: $(patsubst %, $(OBJDIR)/%, fnmadd.o)
 	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
 	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
 
-fnsub: $(patsubst %, $(OBJDIR)/%, fnsub.o)
+fnmsub: $(patsubst %, $(OBJDIR)/%, fnmsub.o)
+	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
+	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
+
+fmaddsub: $(patsubst %, $(OBJDIR)/%, fmaddsub.o)
+	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
+	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
+
+fmsubadd: $(patsubst %, $(OBJDIR)/%, fmsubadd.o)
 	@[ -d $(BINDIR) ] || mkdir $(BINDIR)
 	$(CC) -o $(BINDIR)/$@ $^ $(CFLAGS)
 
