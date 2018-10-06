@@ -2,7 +2,7 @@
 # Date:    2018-08-17 <-- This is my 21th birthday :tada:
 
 CC = gcc
-CFLAGS = -I$(INCDIR) -mavx -mavx2 -mfma -msse -msse2 -msse3
+CFLAGS = -I$(INCDIR) -mavx -mavx2 -mfma -msse -msse2 -msse3 -Wall -O
 
 export CC
 export CFLAGS
