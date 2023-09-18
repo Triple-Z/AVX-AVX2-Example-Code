@@ -2,7 +2,7 @@
 # Date:    2018-08-21
 
 CC = gcc
-CFLAGS = -I$(INCDIR) -mavx -mavx2 -mfma -msse -msse2 -msse3 -Wall -O
+CFLAGS = -I$(INCDIR) -mavx -mavx2 -mfma -msse -msse2 -msse3 -Wall
 
 INCDIR = ../include
 BINDIR = ../bin
